@@ -1,0 +1,25 @@
+{
+  "name": "angular-cui-validator",
+  "version": "1.0.0",
+  "authors": [
+    "Andres Rovira <andres.rovira@gmail.com>"
+  ],
+  "description": "Validates input as Guatemalan CUI (Código Único de Identificación, something like a SSN)",
+  "main": "src/angular-cui-validator.js",
+  "moduleType": [],
+  "keywords": [
+    "cui",
+    "guatemala",
+    "validation",
+    "SSN"
+  ],
+  "license": "MIT",
+  "homepage": "http://verynicetech.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
