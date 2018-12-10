@@ -1,43 +1,43 @@
-# CUI Validator for AngularJS
+# DPI Validator for AngularJS
 
 ## Description
 
-This is a directive for CUI (Código Único de Identificación, something like a SSN in Guatemala).
+This is a directive for DPI (Documento Personal de Identificación, something like a SSN in Guatemala).
 
 ## Downloading
 
 You may use it as a bower component:
 
 ```
-bower install verynicetech/nt-cui-validator
+bower install acwilan/angular-dpi-validator
 ```
 
 Or alternatively:
 
 ```
-bower install angular-cui-validator
+bower install angular-dpi-validator
 ```
 
-You may as well download the [javascript file](src/angular-cui-validator.js) and use it yourself.
+You may as well download the [javascript file](src/angular-dpi-validator.js) and use it yourself.
 
 ## Usage
 
 First of all, you need to include the script in your HTML file.
 
 ```
-<script type="text/javascript" src="bower_components/angular-cui-validator/src/angular-cui-validator.js"></script>
+<script type="text/javascript" src="bower_components/angular-dpi-validator/src/angular-dpi-validator.js"></script>
 ```
 
 Then, you need to modify your `app.js` file to include the dependency.
 
 ```
-angular.module('yourModuleName', ['nicetech.directives'])
+angular.module('yourModuleName', ['acw.directives'])
 ```
 
 Finally, add it as an attribute to your inputs or components that depend on `ng-model`.
 
 ```
-<input type="text" ng-model="cui" cui />
+<input type="text" ng-model="dpi" dpi />
 ```
 
 Cheers!
