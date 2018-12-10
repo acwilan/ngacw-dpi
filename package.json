@@ -1,17 +1,17 @@
 {
-  "name": "angular-cui-validator",
-  "version": "1.0.0",
-  "description": "Validates input as Guatemalan CUI (Código Único de Identificación, something like a SSN)",
-  "main": "src/angular-cui-validator.js",
+  "name": "angular-dpi-validator",
+  "version": "1.1.0",
+  "description": "Validates input as Guatemalan DPI (Documento Personal de Identificación, something like a SSN)",
+  "main": "src/angular-dpi-validator.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/verynicetech/nt-cui-validator.git"
+    "url": "git+https://github.com/acwilan/angular-dpi-validator.git"
   },
   "keywords": [
-    "cui",
+    "dpi",
     "Guatemala",
     "validation",
     "SSN"
@@ -19,7 +19,7 @@
   "author": "Andres Rovira",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/verynicetech/nt-cui-validator/issues"
+    "url": "https://github.com/acwilan/angular-dpi-validator/issues"
   },
-  "homepage": "https://github.com/verynicetech/nt-cui-validator#readme"
+  "homepage": "https://github.com/acwilan/angular-dpi-validator#readme"
 }

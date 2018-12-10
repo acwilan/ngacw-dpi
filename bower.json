@@ -1,20 +1,20 @@
 {
-  "name": "angular-cui-validator",
+  "name": "angular-dpi-validator",
   "version": "1.0.0",
   "authors": [
     "Andres Rovira <andres.rovira@gmail.com>"
   ],
-  "description": "Validates input as Guatemalan CUI (Código Único de Identificación, something like a SSN)",
-  "main": "src/angular-cui-validator.js",
+  "description": "Validates input as Guatemalan DPI (Documento Personal de Identificación, something like a SSN)",
+  "main": "src/angular-dpi-validator.js",
   "moduleType": [],
   "keywords": [
-    "cui",
+    "dpi",
     "guatemala",
     "validation",
     "SSN"
   ],
   "license": "MIT",
-  "homepage": "http://verynicetech.com",
+  "homepage": "http://acwilan.github.io",
   "ignore": [
     "**/.*",
     "node_modules",
