@@ -8,8 +8,8 @@
     <title>Bootstrap 101 Template</title>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="../node_modules/bootstrap3/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../node_modules/bootstrap3/dist/css/bootstrap-theme.css" />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -23,19 +23,22 @@
         <h1>Form Validation with DPI sample</h1>
         <h2>{{vm.title}}</h2>
         <form name="form" class="form" novalidate>
-            <div class="form-group" ng-class="{ 'has-error': form.dpi.$invalid }">
+            <div class="form-group" ng-class="{ 'has-error': form.dpi.$invalid && !form.dpi.$pristine }">
                 <label for="dpi">DPI:</label>
                 <input type="text" dpi class="form-control" id="dpi" name="dpi" placeholder="DPI" ng-model="dpi" required />
+                <span class="help-block" ng-show="form.dpi.$invalid && !form.dpi.$pristine && !form.dpi.$error.required">Invalid DPI</span>
+                <span class="help-block" ng-show="form.dpi.$error.required">Must enter a DPI</span>
+                <span class="help-block" ng-show="!form.dpi.$invalid">DPI ok!</span>
             </div>
             <button type="submit" ng-disabled="!form.$valid">Submit</button>
         </form>
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script-->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="http://code.angularjs.org/snapshot/angular.js"></script>
+    <script src="../node_modules/bootstrap3/dist/js/bootstrap.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="../node_modules/angular/angular.js"></script>
     <script src="../src/angular-dpi-validator.js"></script>
     <script src="./module.js"></script>
     <script src="./controller.js"></script>

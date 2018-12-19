@@ -1,6 +1,7 @@
-(function() {
+(function(angular) {
 
     'use strict';
     
-    angular.module('tests');
-})();
+    angular.module('tests', ['acw.directives']);
+
+})(window.angular);

@@ -1,4 +1,4 @@
-(function() {
+(function(angular) {
 
     angular.module('acw.directives', [])
         .directive('dpi', dpiDirective);
@@ -14,25 +14,7 @@
     }
 
     function dpiDirectiveLink(scope, element, attrs, ctrl) {
-        ctrl.$formatters.push(function (value) {
-            return applyDpiMask(value);
-        });
-
-        ctrl.$parsers.push(function (value) {
-            if (!value) {
-                return value;
-            }
-
-            var cleanValue = clearValue(value);
-            var formatedValue = applyDpiMask(cleanValue);
-
-            if (ctrl.$viewValue !== formatedValue) {
-                ctrl.$setViewValue(formatedValue);
-                ctrl.$render();
-            }
-
-            return clearValue(formatedValue);
-        });
+        element.attr('placeholder', 'xxxx-xxxxx-xxxx');
 
         ctrl.$validators.validdpi = function (modelValue) {
             if (ctrl.$isEmpty(modelValue)) {
@@ -42,33 +24,6 @@
         };
     }
 
-    function clearValue(value) {
-        if (!value) {
-            return value;
-        }
-        return value.trim().toUpperCase().replace(/[^\d]/g, '');
-    }
-
-    function applyDpiMask(modelValue) {
-        if (!modelValue) {
-            return modelValue;
-        }
-        var value = modelValue.toString().trim();
-        if (value.length > 0) {
-            if (value.length >= 4) {
-                value = value.substr(0, 4) + '-' + value.substr(4);
-            }
-            if (value.length >= 10) {
-                value = value.substr(0, 10) + '-' + value.substr(10);
-            }
-            if (value.length > 15) {
-                value = value.substr(0, 15);
-            }
-        }
-
-        return value;
-    }
-
     // Funcion basada en http://jsfiddle.net/miguelerm/tp0t481o/ por Miguel Roman @miguelerm
     function validDpi(modelValue) {
         // En caso de que no venga valor, no se realiza la validacion
@@ -76,13 +31,13 @@
             return true;
         }
         var dpi = modelValue.toString();
-        var dpiRegExp = /^[0-9]{4}\s?[0-9]{5}\s?[0-9]{4}$/;
+        var dpiRegExp = /^[0-9]{4}[\s\-]?[0-9]{5}[\s\-]?[0-9]{4}$/;
 
         if (!dpiRegExp.test(dpi)) {
             return false;
         }
 
-        dpi = dpi.replace(/\s/, '');
+        dpi = dpi.replace(/\s/, '').split(/\-/).join('');
         var regionCode = parseInt(dpi.substring(9, 11), 10);
         var cityCode = parseInt(dpi.substring(11, 13), 10);
         var dpiNumber = dpi.substring(0, 8);
@@ -153,4 +108,4 @@
         return modulus === verifier;
     }
 
-})();
+})(window.angular);

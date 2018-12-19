@@ -20,6 +20,13 @@ bower install angular-dpi-validator
 
 You may as well download the [javascript file](src/angular-dpi-validator.js) and use it yourself.
 
+Or if you use npm / yarn
+
+```
+npm install angular-dpi-validator
+yarn add angular-dpi-validator
+```
+
 ## Usage
 
 First of all, you need to include the script in your HTML file.

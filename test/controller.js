@@ -1,8 +1,8 @@
-(function() {
+(function(angular) {
 
     'use strict';
 
-    angular.module('tests', ['acw.directives'])
+    angular.module('tests')
         .controller('DpiTestController', dpiTestController);
 
     dpiTestController.$inject = ['$log'];
@@ -13,4 +13,4 @@
         vm.title = 'Enter DPI Information below';
     }
 
-})();
+})(window.angular);
