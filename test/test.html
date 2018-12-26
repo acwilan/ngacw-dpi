@@ -30,7 +30,7 @@
                 <span class="help-block" ng-show="form.dpi.$error.required">Must enter a DPI</span>
                 <span class="help-block" ng-show="!form.dpi.$invalid">DPI ok!</span>
             </div>
-            <button type="submit" ng-disabled="!form.$valid">Submit</button>
+            <button type="submit" ng-disabled="!form.$valid" class="btn btn-primary">Submit</button>
         </form>
     </div>
 
@@ -39,7 +39,8 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../node_modules/bootstrap3/dist/js/bootstrap.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="../node_modules/angular/angular.js"></script>
-    <script src="../src/angular-dpi-validator.js"></script>
+    <script src="../node_modules/ngacw-directives/src/ngacw-directives.module.js"></script>
+    <script src="../dist/ngacw-dpi.min.js"></script>
     <script src="./module.js"></script>
     <script src="./controller.js"></script>
   </body>

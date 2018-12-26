@@ -1,12 +1,12 @@
 {
-  "name": "angular-dpi-validator",
-  "version": "1.1.0",
+  "name": "ngacw-dpi",
+  "version": "2.0.0",
   "description": "Validates input as Guatemalan DPI (Documento Personal de Identificación, something like a SSN)",
-  "main": "src/angular-dpi-validator.js",
+  "main": "src/ngacw-dpi.directive.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": "git+https://github.com/acwilan/angular-dpi-validator.git",
+  "repository": "git@github.com:acwilan/ngacw-dpi.git",
   "keywords": [
     "dpi",
     "Guatemala",
@@ -16,17 +16,15 @@
   "author": "Andres Rovira",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/acwilan/angular-dpi-validator/issues"
+    "url": "https://github.com/acwilan/ngacw-dpi/issues"
   },
-  "homepage": "https://github.com/acwilan/angular-dpi-validator#readme",
+  "homepage": "https://github.com/acwilan/ngacw-dpi#readme",
   "devDependencies": {
     "bootstrap3": "^3.3.5",
-    "bower": "^1.8.4",
     "grunt": "^1.0.3",
-    "grunt-contrib-uglify": "^4.0.0",
-    "yarn": "^1.12.3"
+    "grunt-contrib-uglify": "^4.0.0"
   },
   "dependencies": {
-    "angular": "^1.7.5"
+    "ngacw-directives": "^2.0.2"
   }
 }

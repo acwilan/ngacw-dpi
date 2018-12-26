@@ -9,30 +9,24 @@ This is a directive for DPI (Documento Personal de Identificación, something li
 You may use it as a bower component:
 
 ```
-bower install acwilan/angular-dpi-validator
+bower install ngacw-dpi
 ```
 
 Or alternatively:
-
-```
-bower install angular-dpi-validator
-```
-
-You may as well download the [javascript file](src/angular-dpi-validator.js) and use it yourself.
-
-Or if you use npm / yarn
 
 ```
 npm install angular-dpi-validator
 yarn add angular-dpi-validator
 ```
 
+You may as well download the [javascript file](src/ngacw-dpi.js) and use it yourself.
+
 ## Usage
 
 First of all, you need to include the script in your HTML file.
 
 ```
-<script type="text/javascript" src="bower_components/angular-dpi-validator/src/angular-dpi-validator.js"></script>
+<script type="text/javascript" src="node_modules/ngacw-dpi/src/ngacw-dpi.directive.js"></script>
 ```
 
 Then, you need to modify your `app.js` file to include the dependency.

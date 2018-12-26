@@ -1,11 +1,11 @@
 {
-  "name": "angular-dpi-validator",
-  "version": "1.1.0",
+  "name": "ngacw-dpi",
+  "version": "2.0.0",
   "authors": [
     "Andres Rovira <andres.rovira@gmail.com>"
   ],
   "description": "Validates input as Guatemalan DPI (Documento Personal de Identificación, something like a SSN)",
-  "main": "src/angular-dpi-validator.js",
+  "main": "src/ngacw-dpi.directive.js",
   "moduleType": [],
   "keywords": [
     "dpi",
@@ -23,6 +23,6 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "^1.7.5"
+    "ngacw-directives": "^2.0.1"
   }
 }

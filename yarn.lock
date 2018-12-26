@@ -7,10 +7,10 @@ abbrev@1:
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"
   integrity sha512-nne9/IiQ/hzIhY6pdDnbBtz7DjPTKrY00P/zvPSm5pOFkl6xuGrGnXn/VtTNNfNtAfZ9/1RtehkszU9qcTii0Q==
 
-angular@^1.7.5:
-  version "1.7.5"
-  resolved "https://registry.yarnpkg.com/angular/-/angular-1.7.5.tgz#d1c1c01c6f5dc835638f3f9aa51012857bdac49e"
-  integrity sha512-760183yxtGzni740IBTieNuWLtPNAoMqvmC0Z62UoU0I3nqk+VJuO3JbQAXOyvo3Oy/ZsdNQwrSTh/B0OQZjNw==
+angularjs@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/angularjs/-/angularjs-0.0.1.tgz#496f50c7141515e741ea976de891def0838b3f19"
+  integrity sha1-SW9QxxQVFedB6pdt6JHe8IOLPxk=
 
 ansi-regex@^2.0.0:
   version "2.1.1"
@@ -519,6 +519,13 @@ mkdirp@~0.5.1:
   integrity sha1-MAV0OOrGz3+MR2fzhkjWaX11yQM=
   dependencies:
     minimist "0.0.8"
+
+ngacw-directives@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/ngacw-directives/-/ngacw-directives-2.0.0.tgz#2f79bbb1c072a9a8da198e67dd7c5fe81c236c90"
+  integrity sha512-IhKQ9+2WHxJ3dA7rQAyoxEjcepmsuo/DYHPkSY33UKLQ0uGOfopApozsZLnMZnP09dfYXTBtQnuUg0hZfM82ow==
+  dependencies:
+    angularjs "^0.0.1"
 
 nopt@~3.0.6:
   version "3.0.6"

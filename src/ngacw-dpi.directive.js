@@ -1,11 +1,11 @@
 (function(angular) {
 
-    angular.module('acw.directives', [])
-        .directive('dpi', dpiDirective);
+    angular.module('acw.directives')
+        .directive('dpi', DpiDirective);
     
-    dpiDirective.$inject = [];
+    DpiDirective.$inject = [];
     
-    function dpiDirective() {
+    function DpiDirective() {
         return {
             restrict: 'A',
             require: '?ngModel',
